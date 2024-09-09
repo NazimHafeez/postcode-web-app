@@ -4,7 +4,7 @@ const PostcodeLookup = () => {
   const [postcode, setPostcode] = useState('');
   const [result, setResult] = useState(null);
   const [error, setError] = useState('');
-  const API_URL = 'https://localhost:7076/';
+  const API_URL = process.env.REACT_APP_GATEWAY_API_URL;
 
   const handleLookup = async () => {
     try {

@@ -5,7 +5,7 @@ const PostcodeAutocomplete = () => {
   const [matches, setMatches] = useState([]);
   const [selectedPostcode, setSelectedPostcode] = useState(null);
   const [error, setError] = useState('');
-  const API_URL = 'https://localhost:7076/';
+  const API_URL = process.env.REACT_APP_GATEWAY_API_URL;
   const handleAutocomplete = async () => {
     try {
       const response = await fetch(`${API_URL}AutoComplete/${partialPostcode}`);
