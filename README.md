@@ -35,4 +35,8 @@ You can test the application locally by running the clone repositories. Run the 
 Backend stack can be deployed each time someone pushes any changes to main branch or create a pull request through github actions. You can see how it's configured for the CI/CD workflow in .github/workflows/pipeline.yaml file.
 For the front end deployment you need to run the bash script which does everything for you through the script.
 
+- Application front and back-end has already been deployed and are accessible through the links below:
+-- Application Backend URL: https://sfkdx8fdmb.execute-api.eu-west-2.amazonaws.com/Prod/. To make request to the application backend directly you can use the two endpoints https://sfkdx8fdmb.execute-api.eu-west-2.amazonaws.com/Prod/Lookup/<postcode> and https://sfkdx8fdmb.execute-api.eu-west-2.amazonaws.com/Prod/AutoComplete/<partial_postcode> where postcode and partial_post code can be replaced by your postcodes search values.
+-- Application front end is deployed to the Url http://postcode-app-bucket.s3-website.eu-west-2.amazonaws.com
+
 
